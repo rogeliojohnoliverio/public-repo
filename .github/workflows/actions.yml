@@ -9,7 +9,7 @@ jobs:
   sun-ai-code-reviewer:
     runs-on: ubuntu-latest
     steps:
-      - uses: rjoliverio/sun-code-reviewer@v1
+      - uses: rjoliverio/sun-code-reviewer@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ vars.OPENAI_API_KEY }}
